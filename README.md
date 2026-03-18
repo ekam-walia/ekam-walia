@@ -1,4 +1,4 @@
-# Hi, I'm Ekamveer Walia 👋
+# Hi, I'm Ekamveer Walia 
 
 I’m a passionate developer who started coding back in **middle school**, driven by curiosity about how technology works and how software can shape the world. Since then, I’ve been constantly learning, building, and experimenting with different technologies across the software ecosystem.
 
