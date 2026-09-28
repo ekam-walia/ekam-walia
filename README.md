@@ -5,6 +5,7 @@ I’m a passionate developer who started coding back in **middle school**, drive
 My interests lie strongly in **cloud computing, DevOps, and distributed systems**, especially within the **Kubernetes and cloud-native ecosystem**. I enjoy exploring how large-scale systems are designed and contributing to open-source projects that power modern infrastructure.
 
 
+![Snake animation](https://github.com/ekam-walia/ekam-walia/blob/output/github-contribution-grid-snake.svg)
 
 <!---
 ekam-walia/ekam-walia is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
