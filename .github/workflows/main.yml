@@ -1,43 +1,29 @@
-name: Update contribution snake
+name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/snake.yaml"
 
 permissions:
   contents: write
 
-concurrency:
-  group: contribution-snake
-  cancel-in-progress: false
-
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+
     steps:
-      - name: Generate light and dark snake animations
-        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3 (3.5.0)
+      - name: Generate snake
+        uses: Platane/snk@master
         with:
           github_user_name: ekam-walia
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          outputs: |
-            dist/snake-light.svg?palette=github-light&color_snake=%238250df
-            dist/snake-dark.svg?palette=github-dark&color_snake=%23bc8cff
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
 
-      - name: Publish generated images to the output branch
-        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5
+      - name: Publish snake
+        uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
-          target_branch: output
           build_dir: dist
-          keep_history: true
-          allow_empty_commit: false
           jekyll: false
-          commit_message: "Update contribution snake"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
