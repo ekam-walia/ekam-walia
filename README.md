@@ -7,8 +7,8 @@ My interests lie strongly in **cloud computing, DevOps, and distributed systems*
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mimowo/mimowo/output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mimowo/mimowo/output/snake-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ekam-walia/ekam-walia/output/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ekam-walia/ekam-walia/output/snake-light.svg">
   <img src="https://raw.githubusercontent.com/ekam-walia/ekam-walia/output/snake-light.svg" alt="A snake eating the squares of my GitHub contribution calendar">
 </picture>
 
